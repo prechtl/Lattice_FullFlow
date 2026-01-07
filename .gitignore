@@ -1,0 +1,116 @@
+# --- 1. Aggressive Folder Blocks ---
+synlog/
+synwork/
+syntmp/
+impl1/
+impl2/
+*_impl*/
+directory/
+work/
+reveal_workspace/
+.vscode/
+*_tcr.dir/
+
+# --- 2. Synplify & Lattice Temp Files ---
+*.rptmap
+*.szr
+*.xck
+*.plg
+*.tgl
+*.csv
+*.sap
+*.sdc
+*.srr
+*.vhm
+*.txt
+*.png
+
+# --- 3. Lattice Root Junk ---
+*.fse
+*.htm
+*.hub
+*.ior
+*.p3t
+*.rvp
+*.srd
+*.srf
+*.srm
+*.srs
+*.t2b
+*.twr
+*.edn
+*.prs
+*.cdmp
+*.xdm
+*.ibs
+*.cmd
+.run_manager.ini
+
+# --- 4. Reports & Databases ---
+*.rpt
+*.db
+*.asd
+*.hrr
+*.ncd
+*.ngd
+*.scck
+*.tpe
+*.prf
+*.mrp
+*.lso
+*.p2t
+*.pad
+*.par
+*.pt
+*.bgn
+*.drc
+*.bld
+*.map
+*.vho
+*.sdf
+*.alt
+*.areasrr
+*.crf
+*.lct
+*.vis
+.recordref*
+.build_status
+
+# --- 5. Standard Junk ---
+*.sty
+*.jed
+*.bit
+*.tcl
+*.xml
+*.html
+*.log
+*.lck
+*.zip
+*.cif
+*.ngo
+*.syn
+*.rvl
+*.tbt
+*.cam
+*.edi
+*.prm
+*.sid
+*.sle
+*.bak
+stdout.log
+stdout_job.log
+
+# --- 6. Special Handling for LPF ---
+# Ignore generated LPFs, but KEEP your real constraint file
+*.lpf
+!TrafficLight.lpf
+
+# --- Final Cleanup ---
+*.srp
+*.prf_cdmp*
+*.tpf
+
+# --- Oh - and if I'm using svn in parallel w/ git on my PC, 
+# make sure we don't track SVN data in my Git repository!
+# So add the following, catchall...
+.svn/
