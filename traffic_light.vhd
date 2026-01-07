@@ -5,11 +5,12 @@ use ieee.numeric_std.all;
 entity traffic_light is
 port
 (
-  clk     : in  std_logic;
-  reset   : in  std_logic;
-  red     : out std_logic;
-  yellow  : out std_logic;
-  green   : out std_logic
+  clk         : in  std_logic;
+  reset       : in  std_logic;
+  ped_button  : in  std_logic;
+  red         : out std_logic;
+  yellow      : out std_logic;
+  green       : out std_logic
 );
 end traffic_light;
 
@@ -34,7 +35,12 @@ begin
         when S_RED =>
           state <= S_GREEN;
         when S_GREEN =>
-          state <= S_YELLOW;
+          if (ped_button = '1') then 
+            state <= S_YELLOW;
+            counter <= 0;
+          else
+            state <= S_YELLOW;
+          end if;
         when S_YELLOW =>
           state <= S_RED;
         when others =>
