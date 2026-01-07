@@ -2,9 +2,12 @@
 <BaliProject version="3.2" title="TrafficLight" device="LCMXO3L-6900C-5BG256C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="synplify" default_strategy="Strategy1">
-        <Options/>
+        <Options def_top="top"/>
         <Source name="traffic_light.vhd" type="VHDL" type_short="VHDL">
             <Options/>
+        </Source>
+        <Source name="top.sv" type="Verilog" type_short="Verilog">
+            <Options VerilogStandard="System Verilog" top_module="top"/>
         </Source>
         <Source name="TrafficLight.lpf" type="Logic Preference" type_short="LPF">
             <Options/>

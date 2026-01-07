@@ -97,6 +97,7 @@ reveal_workspace/
 *.sid
 *.sle
 *.bak
+*.recovery
 stdout.log
 stdout_job.log
 
