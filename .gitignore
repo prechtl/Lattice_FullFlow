@@ -120,3 +120,7 @@ modelsim.ini
 # make sure we don't track SVN data in my Git repository!
 # So add the following, catchall...
 .svn/
+
+# Note that we DO want to track:
+# .ldf <= Lattice Project File
+# .lpf <= Logical Preference File / Constraints)
